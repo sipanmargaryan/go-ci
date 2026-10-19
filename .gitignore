@@ -1,0 +1,30 @@
+# Binaries and packages
+/bin/
+/vendor/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Air
+tmp/
+
+# Test and build output
+*.test
+*.out
+
+# Environment files
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Go modules (keep go.sum committed normally)

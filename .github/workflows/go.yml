@@ -21,14 +21,10 @@ jobs:
       - name: Check formatting
         run: test -z "$(gofmt -l .)"
 
-      - name: Install golangci-lint
+      - name: Lint
         uses: golangci/golangci-lint-action@v8
         with:
           version: latest
-          install-only: true
-
-      - name: Lint
-        run: golangci-lint run
 
       - name: Build
         run: go build ./...
